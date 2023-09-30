@@ -3,14 +3,16 @@ import java.util.Scanner;
 public class While {
     public static void main(String[] args) {
         // -1을 입력할 때 까지 계속해서 합을 누적하는 예제.
-        int input_number = 0, sum = 0;
+        int input_numbera = 0, sum = 0;
         Scanner sc = new Scanner(System.in);
-
-                     {
+        while(true){
             System.out.print("합할 정수 입력 >> ");
-            input_number = sc.nextInt();
-
-          
+            input_numbera = sc.nextInt();
+            if(input_numbera == -1){
+                break;
+            }else {
+                sum += input_numbera;
+            }
         }
         System.out.printf("정수의 누적합은 %d 입니다.\n", sum);
         
@@ -18,8 +20,6 @@ public class While {
         
         int input_number = 0;
         boolean loop_flag = true;
-        Scanner sc = new Scanner(System.in);
-
         while(loop_flag) {
             System.out.println("메뉴 -------- ");
             System.out.println("1. 주소록 생성 ");
