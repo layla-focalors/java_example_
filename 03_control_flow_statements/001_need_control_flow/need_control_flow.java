@@ -30,19 +30,20 @@ public class need_control_flow {
             System.out.print("연산을 선택하세요(1:덧셈/2:뺄셈/3:곱셈/4:나눗셈/5:나머지) : ");
             operator = sc.nextInt();
 
-            if(operator == 1) { // 덧셈 연산
+            // 연산되는 데이터의 숫자 보기
+            if(++if_cnt < 100 && operator == 1) { // 덧셈 연산
                 System.out.println(num1+num2);
             }
-            else if(operator == 2) { // 뺄셈 연산
+            if(++if_cnt < 100 && operator == 2) { // 뺄셈 연산
                 System.out.println(num1-num2);
             }
-            else if(operator == 3) { // 곱셈 연산
+            if(++if_cnt < 100 && operator == 3) { // 곱셈 연산
                 System.out.println(num1*num2);
             }
-            else if(operator == 4) { // 나눗셈 연산
+            if(++if_cnt < 100 && operator == 4) { // 나눗셈 연산
                 System.out.println((double)num1/num2);
             }
-            else if(operator == 5) { // 나머지 연산
+            if(++if_cnt < 100 && operator == 5) { // 나머지 연산
                 System.out.println(num1%num2);
             }
             ///////////////////////////////////////// type2
