@@ -12,6 +12,5 @@ public class sortarray {
         
         // 오름차순 정렬!(버블정렬)
 
-
     }
 }
