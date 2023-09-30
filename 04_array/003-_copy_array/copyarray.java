@@ -1,20 +1,14 @@
 
-import java.util.*;
-
 public class copyarray {
     public static void main(String[] args) {
         int[] score = new int[] {100, 90, 95, 100, 100}; // 외국어
-        Scanner sc = new Scanner(System.in);
-
-        // 반복문을 통한 데이터 입력
-        // 외국어 점수 입력
-        for(int i=0; i<score.length; i++) {
-            System.out.print(i+1+"번째 학생의 외국어 점수를 입력 >> ");
-            score[i] = sc.nextInt();
-        }
 
         // 학생이 중간에 늘어남. -> 배열 확장 및 복사
+        int [] extended_score = new int[score.length * 2];
         // 확장
+        for(int i = 0; i < score.length; i ++){
+            extended_score[i] = score[i];
+        }
         // 복사
         
         System.out.println("--------------------------------------------------------------------");
