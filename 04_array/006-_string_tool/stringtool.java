@@ -40,6 +40,7 @@ public class stringtool {
         // System.out.println(char_arr.substring(0, 3));
 
         // 5. 문자열의 길이 확인 
+        // 문자열은 함수 형태로 요청해야 한다!
         System.out.println(sentence.length());
         
 
