@@ -47,6 +47,7 @@ public class need_control_flow {
                 System.out.println(num1%num2);
             }
             ///////////////////////////////////////// type2
+            System.out.printf("%s", if_cnt);
             System.out.println(" ----------------------------------------------------------------- ");
             ///////////////////////////////////////// type3
             char char_operator;
@@ -68,6 +69,7 @@ public class need_control_flow {
             else if(++elseif_cnt < 100 && char_operator == '%') { // 나머지 연산
                 System.out.println(num1%num2);
             }
+            System.out.printf("%s", elseif_cnt);
         }
         ///////////////////////////////////////// type3
         return;
