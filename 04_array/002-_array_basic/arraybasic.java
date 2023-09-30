@@ -5,6 +5,7 @@ public class arraybasic {
     public static void main(String[] args) {
         // 길이가 5(개)인 정수형 배열을 생성하고 이를 가르킬 참조변수 선언.
         // 국어
+        int[] score1 = new int[5];
         // 영어
         // 수학
         
