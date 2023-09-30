@@ -1,6 +1,4 @@
 
-import java.util.*;
-
 public class dim2array {
     public static void main(String[] args) {
 
@@ -19,8 +17,13 @@ public class dim2array {
             {1, 9, 8, 5, 3, 9, 3},
             {3, 10, 10, 7, 9, 10, 10}
         };
-
         // 각 팀의 합계 및 평균 구하기
+        for(int i = 0, sum = 0; i < team_score.length; i++, sum = 0){
+            for(int j=0; j < team_score[0].length; j++){
+                sum += team_score[i][j];
+            }
+            System.out.printf("%d팀의 합계는 %d 이며, 평균 값은 %f 입니다.\n", i + 1, sum, (double)sum / 7);
+        }
 
         return;
     }
