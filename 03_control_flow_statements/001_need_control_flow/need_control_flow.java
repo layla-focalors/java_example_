@@ -23,7 +23,7 @@ public class need_control_flow {
             ///////////////////////////////////////// type1
             System.out.println(" ----------------------------------------------------------------- ");
 
-            int if_cnt = 0;
+            int if_cnt = 0;     
             int elseif_cnt = 0;
             ///////////////////////////////////////// type2
             int operator = 0; 
@@ -33,16 +33,16 @@ public class need_control_flow {
             if(operator == 1) { // 덧셈 연산
                 System.out.println(num1+num2);
             }
-            if(operator == 2) { // 뺄셈 연산
+            else if(operator == 2) { // 뺄셈 연산
                 System.out.println(num1-num2);
             }
-            if(operator == 3) { // 곱셈 연산
+            else if(operator == 3) { // 곱셈 연산
                 System.out.println(num1*num2);
             }
-            if(operator == 4) { // 나눗셈 연산
+            else if(operator == 4) { // 나눗셈 연산
                 System.out.println((double)num1/num2);
             }
-            if(operator == 5) { // 나머지 연산
+            else if(operator == 5) { // 나머지 연산
                 System.out.println(num1%num2);
             }
             ///////////////////////////////////////// type2
