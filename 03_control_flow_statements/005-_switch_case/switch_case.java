@@ -34,6 +34,15 @@ public class switch_case {
             }
         }
         int random_number = (int)(Math.random() * 100);
+        // 이거 결과가 소수점이라서! 소수점 * 100을 해서 소수로 바꾸고 강제 형 변환으로 정수로 바꾼다!
+        switch(random_number % 2){
+            case 0:
+                System.out.println("짝수입니다");
+                break;
+            case 1:
+                System.out.println("홀수입니다.");
+                break;
+        }
 
        
 
