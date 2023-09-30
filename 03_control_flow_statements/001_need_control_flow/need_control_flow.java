@@ -53,19 +53,19 @@ public class need_control_flow {
             System.out.print("연산을 선택하세요(+:덧셈 | -:뺄셈 | *:곱셈 | /:나눗셈 | %:나머지) : ");
             char_operator = sc.next().charAt(0);
 
-            if(char_operator == '+') { // 덧셈 연산
+            if(++elseif_cnt < 100 && char_operator == '+') { // 덧셈 연산
                 System.out.println(num1+num2);
             }
-            if(char_operator == '-') { // 뺄셈 연산
+            else if(++elseif_cnt < 100 && char_operator == '-') { // 뺄셈 연산
                 System.out.println(num1-num2);
             }
-            if(char_operator == '*') { // 곱셈 연산
+            else if(++elseif_cnt < 100 && char_operator == '*') { // 곱셈 연산
                 System.out.println(num1*num2);
             }
-            if(char_operator == '/') { // 나눗셈 연산
+            else if(++elseif_cnt < 100 && char_operator == '/') { // 나눗셈 연산
                 System.out.println((double)num1/num2);
             }
-            if(char_operator == '%') { // 나머지 연산
+            else if(++elseif_cnt < 100 && char_operator == '%') { // 나머지 연산
                 System.out.println(num1%num2);
             }
         }
